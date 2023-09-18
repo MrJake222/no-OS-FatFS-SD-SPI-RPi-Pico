@@ -746,7 +746,7 @@ static uint64_t sd_sectors_nolock(sd_card_t *pSD) {
 
         default:
             DBG_PRINTF("CSD struct unsupported\r\n");
-            myASSERT(!"CSD struct unsupported\r\n");
+            // myASSERT(!"CSD struct unsupported\r\n");
             return 0;
     };
     return blocks;
